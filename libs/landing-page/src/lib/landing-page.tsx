@@ -7,7 +7,7 @@ import SignupModal from "./signup-modal/signup-modal";
 import Cookies from 'universal-cookie';
 import {Route} from 'react-router-dom';
 import { useHistory } from "react-router-dom";
-import {environment} from "../../../../apps/web-editor-client/src/environments/environment";
+import {environment} from "../../../../apps/app-client/src/environments/environment";
 
 /* eslint-disable-next-line */
 export interface LandingPageProps {}
@@ -73,7 +73,7 @@ export const LandingPage = (props: LandingPageProps) => {
         const bearerToken = res.data.bearerToken;
         cookies.set("email", email);
         cookies.set("bearerToken", bearerToken);
-        history.push('/design-list')
+        history.push('/main-page')
       })
       .catch(err => {
         if(err.response.status === 404) {

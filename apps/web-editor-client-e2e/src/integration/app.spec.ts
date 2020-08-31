@@ -1,6 +1,6 @@
 import { getGreeting } from '../support/app.po';
 
-describe('web-editor-client', () => {
+describe('app-client', () => {
   beforeEach(() => cy.visit('/'));
 
   it('should display welcome message', () => {
@@ -8,6 +8,6 @@ describe('web-editor-client', () => {
     cy.login('my-email@something.com', 'myPassword');
 
     // Function helper example, see `../support/app.po.ts` file
-    getGreeting().contains('Welcome to web-editor-client!');
+    getGreeting().contains('Welcome to app-client!');
   });
 });

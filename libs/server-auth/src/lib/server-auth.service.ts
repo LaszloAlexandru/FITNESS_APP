@@ -17,7 +17,7 @@ export class ServerAuthService {
   ) {}
 
   getData(): { message: string } {
-    return { message: 'Welcome to web-editor-server!' };
+    return { message: 'Welcome to app-server!' };
   }
 
   async getUserById(email) {

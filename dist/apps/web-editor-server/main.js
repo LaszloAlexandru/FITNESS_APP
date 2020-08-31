@@ -147,7 +147,7 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var _app_controller__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! ./app.controller */ "./apps/web-editor-server/src/app/app.controller.ts");
 /* harmony import */ var _app_service__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! ./app.service */ "./apps/web-editor-server/src/app/app.service.ts");
 /* harmony import */ var _web_editor_server_auth__WEBPACK_IMPORTED_MODULE_5__ = __webpack_require__(/*! @web-editor/server-auth */ "./libs/server-auth/src/index.ts");
-/* harmony import */ var _web_editor_design_crud__WEBPACK_IMPORTED_MODULE_6__ = __webpack_require__(/*! @web-editor/design-crud */ "./libs/design-crud/src/index.ts");
+/* harmony import */ var _web_editor_fclass_crud__WEBPACK_IMPORTED_MODULE_6__ = __webpack_require__(/*! @web-editor/fclass-crud */ "./libs/fclass-crud/src/index.ts");
 
 
 
@@ -162,7 +162,7 @@ AppModule = Object(tslib__WEBPACK_IMPORTED_MODULE_0__["__decorate"])([
         imports: [
             _nestjs_mongoose__WEBPACK_IMPORTED_MODULE_2__["MongooseModule"].forRoot('mongodb+srv://TestUser:NSLKDrhDjOmtEKeY@web-editor-mp3gm.mongodb.net/Web-Editor?retryWrites=true&w=majority'),
             _web_editor_server_auth__WEBPACK_IMPORTED_MODULE_5__["ServerAuthModule"],
-            _web_editor_design_crud__WEBPACK_IMPORTED_MODULE_6__["DesignCrudModule"]
+            _web_editor_fclass_crud__WEBPACK_IMPORTED_MODULE_6__["FclassCrudModule"]
         ],
         controllers: [_app_controller__WEBPACK_IMPORTED_MODULE_3__["AppController"]],
         providers: [_app_service__WEBPACK_IMPORTED_MODULE_4__["AppService"]]
@@ -198,24 +198,6 @@ AppService = Object(tslib__WEBPACK_IMPORTED_MODULE_0__["__decorate"])([
     Object(_nestjs_common__WEBPACK_IMPORTED_MODULE_1__["Injectable"])()
 ], AppService);
 
-
-
-/***/ }),
-
-/***/ "./apps/web-editor-server/src/environments/environment.ts":
-/*!****************************************************************!*\
-  !*** ./apps/web-editor-server/src/environments/environment.ts ***!
-  \****************************************************************/
-/*! exports provided: environment */
-/***/ (function(module, __webpack_exports__, __webpack_require__) {
-
-"use strict";
-__webpack_require__.r(__webpack_exports__);
-/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "environment", function() { return environment; });
-const environment = {
-    production: false,
-    assetsPath: 'apps/web-editor-server/src/assets/comunication.js'
-};
 
 
 /***/ }),
@@ -258,23 +240,23 @@ bootstrap();
 
 /***/ }),
 
-/***/ "./libs/design-crud/src/index.ts":
+/***/ "./libs/fclass-crud/src/index.ts":
 /*!***************************************!*\
-  !*** ./libs/design-crud/src/index.ts ***!
+  !*** ./libs/fclass-crud/src/index.ts ***!
   \***************************************/
-/*! exports provided: DesignCrudModule, DesignCrudService, DesignCrudController */
+/*! exports provided: FclassCrudModule, FclassCrudService, FclassCrudController */
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
 __webpack_require__.r(__webpack_exports__);
-/* harmony import */ var _lib_design_crud_module__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ./lib/design-crud.module */ "./libs/design-crud/src/lib/design-crud.module.ts");
-/* harmony reexport (safe) */ __webpack_require__.d(__webpack_exports__, "DesignCrudModule", function() { return _lib_design_crud_module__WEBPACK_IMPORTED_MODULE_0__["DesignCrudModule"]; });
+/* harmony import */ var _lib_fclass_crud_module__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ./lib/fclass-crud.module */ "./libs/fclass-crud/src/lib/fclass-crud.module.ts");
+/* harmony reexport (safe) */ __webpack_require__.d(__webpack_exports__, "FclassCrudModule", function() { return _lib_fclass_crud_module__WEBPACK_IMPORTED_MODULE_0__["FclassCrudModule"]; });
 
-/* harmony import */ var _lib_design_crud_service__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ./lib/design-crud.service */ "./libs/design-crud/src/lib/design-crud.service.ts");
-/* harmony reexport (safe) */ __webpack_require__.d(__webpack_exports__, "DesignCrudService", function() { return _lib_design_crud_service__WEBPACK_IMPORTED_MODULE_1__["DesignCrudService"]; });
+/* harmony import */ var _lib_fclass_crud_service__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ./lib/fclass-crud.service */ "./libs/fclass-crud/src/lib/fclass-crud.service.ts");
+/* harmony reexport (safe) */ __webpack_require__.d(__webpack_exports__, "FclassCrudService", function() { return _lib_fclass_crud_service__WEBPACK_IMPORTED_MODULE_1__["FclassCrudService"]; });
 
-/* harmony import */ var _lib_design_crud_controller__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ./lib/design-crud.controller */ "./libs/design-crud/src/lib/design-crud.controller.ts");
-/* harmony reexport (safe) */ __webpack_require__.d(__webpack_exports__, "DesignCrudController", function() { return _lib_design_crud_controller__WEBPACK_IMPORTED_MODULE_2__["DesignCrudController"]; });
+/* harmony import */ var _lib_fclass_crud_controller__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ./lib/fclass-crud.controller */ "./libs/fclass-crud/src/lib/fclass-crud.controller.ts");
+/* harmony reexport (safe) */ __webpack_require__.d(__webpack_exports__, "FclassCrudController", function() { return _lib_fclass_crud_controller__WEBPACK_IMPORTED_MODULE_2__["FclassCrudController"]; });
 
 
 
@@ -283,78 +265,37 @@ __webpack_require__.r(__webpack_exports__);
 
 /***/ }),
 
-/***/ "./libs/design-crud/src/lib/design-crud.controller.ts":
+/***/ "./libs/fclass-crud/src/lib/fclass-crud.controller.ts":
 /*!************************************************************!*\
-  !*** ./libs/design-crud/src/lib/design-crud.controller.ts ***!
+  !*** ./libs/fclass-crud/src/lib/fclass-crud.controller.ts ***!
   \************************************************************/
-/*! exports provided: DesignCrudController */
+/*! exports provided: FclassCrudController */
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
 __webpack_require__.r(__webpack_exports__);
-/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "DesignCrudController", function() { return DesignCrudController; });
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "FclassCrudController", function() { return FclassCrudController; });
 /* harmony import */ var tslib__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! tslib */ "tslib");
 /* harmony import */ var tslib__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(tslib__WEBPACK_IMPORTED_MODULE_0__);
 /* harmony import */ var _nestjs_common__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! @nestjs/common */ "@nestjs/common");
 /* harmony import */ var _nestjs_common__WEBPACK_IMPORTED_MODULE_1___default = /*#__PURE__*/__webpack_require__.n(_nestjs_common__WEBPACK_IMPORTED_MODULE_1__);
-/* harmony import */ var _design_crud_service__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ./design-crud.service */ "./libs/design-crud/src/lib/design-crud.service.ts");
-/* harmony import */ var _apps_web_editor_server_src_environments_environment__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! ../../../../apps/web-editor-server/src/environments/environment */ "./apps/web-editor-server/src/environments/environment.ts");
-/* harmony import */ var fs__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! fs */ "fs");
-/* harmony import */ var fs__WEBPACK_IMPORTED_MODULE_4___default = /*#__PURE__*/__webpack_require__.n(fs__WEBPACK_IMPORTED_MODULE_4__);
+/* harmony import */ var _fclass_crud_service__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ./fclass-crud.service */ "./libs/fclass-crud/src/lib/fclass-crud.service.ts");
 var _a;
 
 
 
-
-
-let DesignCrudController = class DesignCrudController {
-    constructor(designCrudService) {
-        this.designCrudService = designCrudService;
+let FclassCrudController = class FclassCrudController {
+    constructor(fclassCrudService) {
+        this.fclassCrudService = fclassCrudService;
     }
-    getTestData() {
-        return "It works";
+    getClasses() {
+        return this.fclassCrudService.getClasses();
     }
-    getModification(email, name) {
-        return Object(tslib__WEBPACK_IMPORTED_MODULE_0__["__awaiter"])(this, void 0, void 0, function* () {
-            return yield this.designCrudService.getDesignById(email, name);
-        });
+    postClasses(name, shortDescription, description, rating, numberOfReviews) {
+        return this.fclassCrudService.createClass(name, shortDescription, description, rating, numberOfReviews);
     }
-    activateDesign(email, name) {
-        return Object(tslib__WEBPACK_IMPORTED_MODULE_0__["__awaiter"])(this, void 0, void 0, function* () {
-            return this.designCrudService.activateDesign(email, name);
-        });
-    }
-    getModifications(email, token) {
-        return Object(tslib__WEBPACK_IMPORTED_MODULE_0__["__awaiter"])(this, void 0, void 0, function* () {
-            const response = yield this.designCrudService.getActiveDesigns(email, token);
-            return response;
-        });
-    }
-    getFile(email, res) {
-        return Object(tslib__WEBPACK_IMPORTED_MODULE_0__["__awaiter"])(this, void 0, void 0, function* () {
-            const defaultJs = fs__WEBPACK_IMPORTED_MODULE_4__["readFileSync"](_apps_web_editor_server_src_environments_environment__WEBPACK_IMPORTED_MODULE_3__["environment"].assetsPath);
-            const finishedJs = _apps_web_editor_server_src_environments_environment__WEBPACK_IMPORTED_MODULE_3__["environment"].production
-                ? `const url='http://3.84.66.174:3333/api/design-crud/getActiveModifications?email=${email}&token=something';\n` + defaultJs
-                : `const url='http://localhost:3333/api/design-crud/getActiveModifications?email=${email}&token=something';\n` + defaultJs;
-            res.setHeader('Content-type', "application/octet-stream");
-            res.setHeader('Content-disposition', 'attachment; filename=communication.js');
-            res.send(finishedJs);
-        });
-    }
-    postData(email, name, timestamp, active, jsModification, genericModifications, resizeModifications) {
-        return Object(tslib__WEBPACK_IMPORTED_MODULE_0__["__awaiter"])(this, void 0, void 0, function* () {
-            return yield this.designCrudService.addDesign(email, name, active, timestamp, jsModification, genericModifications, resizeModifications);
-        });
-    }
-    deleteDesign(email, name) {
-        return Object(tslib__WEBPACK_IMPORTED_MODULE_0__["__awaiter"])(this, void 0, void 0, function* () {
-            return this.designCrudService.deleteDesign(email, name);
-        });
-    }
-    getDesigns(email) {
-        return Object(tslib__WEBPACK_IMPORTED_MODULE_0__["__awaiter"])(this, void 0, void 0, function* () {
-            return this.designCrudService.getDesigns(email);
-        });
+    updateClass(name, rating) {
+        return this.fclassCrudService.updateClass(name, rating);
     }
 };
 Object(tslib__WEBPACK_IMPORTED_MODULE_0__["__decorate"])([
@@ -362,172 +303,109 @@ Object(tslib__WEBPACK_IMPORTED_MODULE_0__["__decorate"])([
     Object(tslib__WEBPACK_IMPORTED_MODULE_0__["__metadata"])("design:type", Function),
     Object(tslib__WEBPACK_IMPORTED_MODULE_0__["__metadata"])("design:paramtypes", []),
     Object(tslib__WEBPACK_IMPORTED_MODULE_0__["__metadata"])("design:returntype", void 0)
-], DesignCrudController.prototype, "getTestData", null);
+], FclassCrudController.prototype, "getClasses", null);
 Object(tslib__WEBPACK_IMPORTED_MODULE_0__["__decorate"])([
-    Object(_nestjs_common__WEBPACK_IMPORTED_MODULE_1__["Get"])('/modification'),
-    Object(tslib__WEBPACK_IMPORTED_MODULE_0__["__param"])(0, Object(_nestjs_common__WEBPACK_IMPORTED_MODULE_1__["Query"])('email')),
-    Object(tslib__WEBPACK_IMPORTED_MODULE_0__["__param"])(1, Object(_nestjs_common__WEBPACK_IMPORTED_MODULE_1__["Query"])('name')),
+    Object(_nestjs_common__WEBPACK_IMPORTED_MODULE_1__["Post"])(),
+    Object(tslib__WEBPACK_IMPORTED_MODULE_0__["__param"])(0, Object(_nestjs_common__WEBPACK_IMPORTED_MODULE_1__["Body"])('name')),
+    Object(tslib__WEBPACK_IMPORTED_MODULE_0__["__param"])(1, Object(_nestjs_common__WEBPACK_IMPORTED_MODULE_1__["Body"])('shortDescription')),
+    Object(tslib__WEBPACK_IMPORTED_MODULE_0__["__param"])(2, Object(_nestjs_common__WEBPACK_IMPORTED_MODULE_1__["Body"])('description')),
+    Object(tslib__WEBPACK_IMPORTED_MODULE_0__["__param"])(3, Object(_nestjs_common__WEBPACK_IMPORTED_MODULE_1__["Body"])('rating')),
+    Object(tslib__WEBPACK_IMPORTED_MODULE_0__["__param"])(4, Object(_nestjs_common__WEBPACK_IMPORTED_MODULE_1__["Body"])('numberOfReviews')),
     Object(tslib__WEBPACK_IMPORTED_MODULE_0__["__metadata"])("design:type", Function),
-    Object(tslib__WEBPACK_IMPORTED_MODULE_0__["__metadata"])("design:paramtypes", [String, String]),
-    Object(tslib__WEBPACK_IMPORTED_MODULE_0__["__metadata"])("design:returntype", Promise)
-], DesignCrudController.prototype, "getModification", null);
+    Object(tslib__WEBPACK_IMPORTED_MODULE_0__["__metadata"])("design:paramtypes", [String, String, String, Number, Number]),
+    Object(tslib__WEBPACK_IMPORTED_MODULE_0__["__metadata"])("design:returntype", void 0)
+], FclassCrudController.prototype, "postClasses", null);
 Object(tslib__WEBPACK_IMPORTED_MODULE_0__["__decorate"])([
-    Object(_nestjs_common__WEBPACK_IMPORTED_MODULE_1__["Put"])('/activate'),
-    Object(tslib__WEBPACK_IMPORTED_MODULE_0__["__param"])(0, Object(_nestjs_common__WEBPACK_IMPORTED_MODULE_1__["Query"])('email')),
-    Object(tslib__WEBPACK_IMPORTED_MODULE_0__["__param"])(1, Object(_nestjs_common__WEBPACK_IMPORTED_MODULE_1__["Query"])('name')),
+    Object(_nestjs_common__WEBPACK_IMPORTED_MODULE_1__["Put"])(),
+    Object(tslib__WEBPACK_IMPORTED_MODULE_0__["__param"])(0, Object(_nestjs_common__WEBPACK_IMPORTED_MODULE_1__["Body"])('name')),
+    Object(tslib__WEBPACK_IMPORTED_MODULE_0__["__param"])(1, Object(_nestjs_common__WEBPACK_IMPORTED_MODULE_1__["Body"])('rating')),
     Object(tslib__WEBPACK_IMPORTED_MODULE_0__["__metadata"])("design:type", Function),
-    Object(tslib__WEBPACK_IMPORTED_MODULE_0__["__metadata"])("design:paramtypes", [String, String]),
-    Object(tslib__WEBPACK_IMPORTED_MODULE_0__["__metadata"])("design:returntype", Promise)
-], DesignCrudController.prototype, "activateDesign", null);
-Object(tslib__WEBPACK_IMPORTED_MODULE_0__["__decorate"])([
-    Object(_nestjs_common__WEBPACK_IMPORTED_MODULE_1__["Get"])('/getActiveModifications'),
-    Object(tslib__WEBPACK_IMPORTED_MODULE_0__["__param"])(0, Object(_nestjs_common__WEBPACK_IMPORTED_MODULE_1__["Query"])('email')),
-    Object(tslib__WEBPACK_IMPORTED_MODULE_0__["__param"])(1, Object(_nestjs_common__WEBPACK_IMPORTED_MODULE_1__["Query"])('token')),
-    Object(tslib__WEBPACK_IMPORTED_MODULE_0__["__metadata"])("design:type", Function),
-    Object(tslib__WEBPACK_IMPORTED_MODULE_0__["__metadata"])("design:paramtypes", [String, String]),
-    Object(tslib__WEBPACK_IMPORTED_MODULE_0__["__metadata"])("design:returntype", Promise)
-], DesignCrudController.prototype, "getModifications", null);
-Object(tslib__WEBPACK_IMPORTED_MODULE_0__["__decorate"])([
-    Object(_nestjs_common__WEBPACK_IMPORTED_MODULE_1__["Get"])('/getFile'),
-    Object(tslib__WEBPACK_IMPORTED_MODULE_0__["__param"])(0, Object(_nestjs_common__WEBPACK_IMPORTED_MODULE_1__["Query"])('email')),
-    Object(tslib__WEBPACK_IMPORTED_MODULE_0__["__param"])(1, Object(_nestjs_common__WEBPACK_IMPORTED_MODULE_1__["Res"])()),
-    Object(tslib__WEBPACK_IMPORTED_MODULE_0__["__metadata"])("design:type", Function),
-    Object(tslib__WEBPACK_IMPORTED_MODULE_0__["__metadata"])("design:paramtypes", [String, Object]),
-    Object(tslib__WEBPACK_IMPORTED_MODULE_0__["__metadata"])("design:returntype", Promise)
-], DesignCrudController.prototype, "getFile", null);
-Object(tslib__WEBPACK_IMPORTED_MODULE_0__["__decorate"])([
-    Object(_nestjs_common__WEBPACK_IMPORTED_MODULE_1__["Post"])('addDesign'),
-    Object(tslib__WEBPACK_IMPORTED_MODULE_0__["__param"])(0, Object(_nestjs_common__WEBPACK_IMPORTED_MODULE_1__["Body"])('email')),
-    Object(tslib__WEBPACK_IMPORTED_MODULE_0__["__param"])(1, Object(_nestjs_common__WEBPACK_IMPORTED_MODULE_1__["Body"])('name')),
-    Object(tslib__WEBPACK_IMPORTED_MODULE_0__["__param"])(2, Object(_nestjs_common__WEBPACK_IMPORTED_MODULE_1__["Body"])('timestamp')),
-    Object(tslib__WEBPACK_IMPORTED_MODULE_0__["__param"])(3, Object(_nestjs_common__WEBPACK_IMPORTED_MODULE_1__["Body"])('active')),
-    Object(tslib__WEBPACK_IMPORTED_MODULE_0__["__param"])(4, Object(_nestjs_common__WEBPACK_IMPORTED_MODULE_1__["Body"])('jsModification')),
-    Object(tslib__WEBPACK_IMPORTED_MODULE_0__["__param"])(5, Object(_nestjs_common__WEBPACK_IMPORTED_MODULE_1__["Body"])('genericModification')),
-    Object(tslib__WEBPACK_IMPORTED_MODULE_0__["__param"])(6, Object(_nestjs_common__WEBPACK_IMPORTED_MODULE_1__["Body"])('resizeModifications')),
-    Object(tslib__WEBPACK_IMPORTED_MODULE_0__["__metadata"])("design:type", Function),
-    Object(tslib__WEBPACK_IMPORTED_MODULE_0__["__metadata"])("design:paramtypes", [String, String, String, Boolean, Array, Array, Array]),
-    Object(tslib__WEBPACK_IMPORTED_MODULE_0__["__metadata"])("design:returntype", Promise)
-], DesignCrudController.prototype, "postData", null);
-Object(tslib__WEBPACK_IMPORTED_MODULE_0__["__decorate"])([
-    Object(_nestjs_common__WEBPACK_IMPORTED_MODULE_1__["Delete"])('addDesign'),
-    Object(tslib__WEBPACK_IMPORTED_MODULE_0__["__param"])(0, Object(_nestjs_common__WEBPACK_IMPORTED_MODULE_1__["Body"])('email')),
-    Object(tslib__WEBPACK_IMPORTED_MODULE_0__["__param"])(1, Object(_nestjs_common__WEBPACK_IMPORTED_MODULE_1__["Body"])('name')),
-    Object(tslib__WEBPACK_IMPORTED_MODULE_0__["__metadata"])("design:type", Function),
-    Object(tslib__WEBPACK_IMPORTED_MODULE_0__["__metadata"])("design:paramtypes", [String, String]),
-    Object(tslib__WEBPACK_IMPORTED_MODULE_0__["__metadata"])("design:returntype", Promise)
-], DesignCrudController.prototype, "deleteDesign", null);
-Object(tslib__WEBPACK_IMPORTED_MODULE_0__["__decorate"])([
-    Object(_nestjs_common__WEBPACK_IMPORTED_MODULE_1__["Get"])("getDesigns"),
-    Object(tslib__WEBPACK_IMPORTED_MODULE_0__["__param"])(0, Object(_nestjs_common__WEBPACK_IMPORTED_MODULE_1__["Query"])('email')),
-    Object(tslib__WEBPACK_IMPORTED_MODULE_0__["__metadata"])("design:type", Function),
-    Object(tslib__WEBPACK_IMPORTED_MODULE_0__["__metadata"])("design:paramtypes", [String]),
-    Object(tslib__WEBPACK_IMPORTED_MODULE_0__["__metadata"])("design:returntype", Promise)
-], DesignCrudController.prototype, "getDesigns", null);
-DesignCrudController = Object(tslib__WEBPACK_IMPORTED_MODULE_0__["__decorate"])([
-    Object(_nestjs_common__WEBPACK_IMPORTED_MODULE_1__["Controller"])('design-crud'),
-    Object(tslib__WEBPACK_IMPORTED_MODULE_0__["__metadata"])("design:paramtypes", [typeof (_a = typeof _design_crud_service__WEBPACK_IMPORTED_MODULE_2__["DesignCrudService"] !== "undefined" && _design_crud_service__WEBPACK_IMPORTED_MODULE_2__["DesignCrudService"]) === "function" ? _a : Object])
-], DesignCrudController);
+    Object(tslib__WEBPACK_IMPORTED_MODULE_0__["__metadata"])("design:paramtypes", [String, Number]),
+    Object(tslib__WEBPACK_IMPORTED_MODULE_0__["__metadata"])("design:returntype", void 0)
+], FclassCrudController.prototype, "updateClass", null);
+FclassCrudController = Object(tslib__WEBPACK_IMPORTED_MODULE_0__["__decorate"])([
+    Object(_nestjs_common__WEBPACK_IMPORTED_MODULE_1__["Controller"])('fclass-crud'),
+    Object(tslib__WEBPACK_IMPORTED_MODULE_0__["__metadata"])("design:paramtypes", [typeof (_a = typeof _fclass_crud_service__WEBPACK_IMPORTED_MODULE_2__["FclassCrudService"] !== "undefined" && _fclass_crud_service__WEBPACK_IMPORTED_MODULE_2__["FclassCrudService"]) === "function" ? _a : Object])
+], FclassCrudController);
 
 
 
 /***/ }),
 
-/***/ "./libs/design-crud/src/lib/design-crud.model.ts":
+/***/ "./libs/fclass-crud/src/lib/fclass-crud.model.ts":
 /*!*******************************************************!*\
-  !*** ./libs/design-crud/src/lib/design-crud.model.ts ***!
+  !*** ./libs/fclass-crud/src/lib/fclass-crud.model.ts ***!
   \*******************************************************/
-/*! exports provided: JavascriptInjectionSchema, GenericModificationSchema, ResizeModificationSchema, DesignSchema */
+/*! exports provided: FclassSchema */
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
 __webpack_require__.r(__webpack_exports__);
-/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "JavascriptInjectionSchema", function() { return JavascriptInjectionSchema; });
-/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "GenericModificationSchema", function() { return GenericModificationSchema; });
-/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "ResizeModificationSchema", function() { return ResizeModificationSchema; });
-/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "DesignSchema", function() { return DesignSchema; });
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "FclassSchema", function() { return FclassSchema; });
 /* harmony import */ var mongoose__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! mongoose */ "mongoose");
 /* harmony import */ var mongoose__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(mongoose__WEBPACK_IMPORTED_MODULE_0__);
 
-const JavascriptInjectionSchema = new mongoose__WEBPACK_IMPORTED_MODULE_0__["Schema"]({
-    type: { type: String, required: true },
-    value: { type: String, required: true }
-});
-const GenericModificationSchema = new mongoose__WEBPACK_IMPORTED_MODULE_0__["Schema"]({
-    type: { type: String, required: true },
-    selector: { type: String, required: true },
-    value: { type: String, required: false }
-});
-const ResizeModificationSchema = new mongoose__WEBPACK_IMPORTED_MODULE_0__["Schema"]({
-    type: { type: String, required: true },
-    selector: { type: String, required: true },
-    value: {
-        width: { type: String },
-        height: { type: String }
-    }
-});
-const DesignSchema = new mongoose__WEBPACK_IMPORTED_MODULE_0__["Schema"]({
-    email: { type: String, required: true },
+const FclassSchema = new mongoose__WEBPACK_IMPORTED_MODULE_0__["Schema"]({
     name: { type: String, required: true },
-    timestamp: { type: String, required: true },
-    active: { type: Boolean, required: true },
-    javascriptInjections: { type: [JavascriptInjectionSchema], required: false },
-    genericModifications: { type: [GenericModificationSchema], required: false },
-    resizeModifications: { type: [ResizeModificationSchema], required: false }
+    shortDescription: { type: String, required: true },
+    description: { type: String, required: true },
+    rating: { type: Number, required: true },
+    numberOfReviews: { type: Number, required: true },
 });
 
 
 /***/ }),
 
-/***/ "./libs/design-crud/src/lib/design-crud.module.ts":
+/***/ "./libs/fclass-crud/src/lib/fclass-crud.module.ts":
 /*!********************************************************!*\
-  !*** ./libs/design-crud/src/lib/design-crud.module.ts ***!
+  !*** ./libs/fclass-crud/src/lib/fclass-crud.module.ts ***!
   \********************************************************/
-/*! exports provided: DesignCrudModule */
+/*! exports provided: FclassCrudModule */
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
 __webpack_require__.r(__webpack_exports__);
-/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "DesignCrudModule", function() { return DesignCrudModule; });
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "FclassCrudModule", function() { return FclassCrudModule; });
 /* harmony import */ var tslib__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! tslib */ "tslib");
 /* harmony import */ var tslib__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(tslib__WEBPACK_IMPORTED_MODULE_0__);
 /* harmony import */ var _nestjs_common__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! @nestjs/common */ "@nestjs/common");
 /* harmony import */ var _nestjs_common__WEBPACK_IMPORTED_MODULE_1___default = /*#__PURE__*/__webpack_require__.n(_nestjs_common__WEBPACK_IMPORTED_MODULE_1__);
-/* harmony import */ var _design_crud_service__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ./design-crud.service */ "./libs/design-crud/src/lib/design-crud.service.ts");
-/* harmony import */ var _design_crud_controller__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! ./design-crud.controller */ "./libs/design-crud/src/lib/design-crud.controller.ts");
+/* harmony import */ var _fclass_crud_service__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ./fclass-crud.service */ "./libs/fclass-crud/src/lib/fclass-crud.service.ts");
+/* harmony import */ var _fclass_crud_controller__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! ./fclass-crud.controller */ "./libs/fclass-crud/src/lib/fclass-crud.controller.ts");
 /* harmony import */ var _nestjs_mongoose__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! @nestjs/mongoose */ "@nestjs/mongoose");
 /* harmony import */ var _nestjs_mongoose__WEBPACK_IMPORTED_MODULE_4___default = /*#__PURE__*/__webpack_require__.n(_nestjs_mongoose__WEBPACK_IMPORTED_MODULE_4__);
-/* harmony import */ var _design_crud_model__WEBPACK_IMPORTED_MODULE_5__ = __webpack_require__(/*! ./design-crud.model */ "./libs/design-crud/src/lib/design-crud.model.ts");
+/* harmony import */ var _fclass_crud_model__WEBPACK_IMPORTED_MODULE_5__ = __webpack_require__(/*! ./fclass-crud.model */ "./libs/fclass-crud/src/lib/fclass-crud.model.ts");
 
 
 
 
 
 
-let DesignCrudModule = class DesignCrudModule {
+let FclassCrudModule = class FclassCrudModule {
 };
-DesignCrudModule = Object(tslib__WEBPACK_IMPORTED_MODULE_0__["__decorate"])([
+FclassCrudModule = Object(tslib__WEBPACK_IMPORTED_MODULE_0__["__decorate"])([
     Object(_nestjs_common__WEBPACK_IMPORTED_MODULE_1__["Module"])({
-        imports: [_nestjs_mongoose__WEBPACK_IMPORTED_MODULE_4__["MongooseModule"].forFeature([{ name: 'design', schema: _design_crud_model__WEBPACK_IMPORTED_MODULE_5__["DesignSchema"] }])],
-        controllers: [_design_crud_controller__WEBPACK_IMPORTED_MODULE_3__["DesignCrudController"]],
-        providers: [_design_crud_service__WEBPACK_IMPORTED_MODULE_2__["DesignCrudService"]],
-        exports: [_design_crud_service__WEBPACK_IMPORTED_MODULE_2__["DesignCrudService"]]
+        imports: [_nestjs_mongoose__WEBPACK_IMPORTED_MODULE_4__["MongooseModule"].forFeature([{ name: 'fclass', schema: _fclass_crud_model__WEBPACK_IMPORTED_MODULE_5__["FclassSchema"] }])],
+        controllers: [_fclass_crud_controller__WEBPACK_IMPORTED_MODULE_3__["FclassCrudController"]],
+        providers: [_fclass_crud_service__WEBPACK_IMPORTED_MODULE_2__["FclassCrudService"]],
+        exports: [_fclass_crud_service__WEBPACK_IMPORTED_MODULE_2__["FclassCrudService"]]
     })
-], DesignCrudModule);
+], FclassCrudModule);
 
 
 
 /***/ }),
 
-/***/ "./libs/design-crud/src/lib/design-crud.service.ts":
+/***/ "./libs/fclass-crud/src/lib/fclass-crud.service.ts":
 /*!*********************************************************!*\
-  !*** ./libs/design-crud/src/lib/design-crud.service.ts ***!
+  !*** ./libs/fclass-crud/src/lib/fclass-crud.service.ts ***!
   \*********************************************************/
-/*! exports provided: DesignCrudService */
+/*! exports provided: FclassCrudService */
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
 __webpack_require__.r(__webpack_exports__);
-/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "DesignCrudService", function() { return DesignCrudService; });
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "FclassCrudService", function() { return FclassCrudService; });
 /* harmony import */ var tslib__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! tslib */ "tslib");
 /* harmony import */ var tslib__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(tslib__WEBPACK_IMPORTED_MODULE_0__);
 /* harmony import */ var _nestjs_common__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! @nestjs/common */ "@nestjs/common");
@@ -541,58 +419,39 @@ var _a;
 
 
 
-let DesignCrudService = class DesignCrudService {
-    constructor(design) {
-        this.design = design;
+let FclassCrudService = class FclassCrudService {
+    constructor(fclass) {
+        this.fclass = fclass;
     }
-    getDesignById(email, name) {
+    getClasses() {
         return Object(tslib__WEBPACK_IMPORTED_MODULE_0__["__awaiter"])(this, void 0, void 0, function* () {
-            return this.design.findOne({ email: email, name: name });
+            return this.fclass.find();
         });
     }
-    activateDesign(email, name) {
+    createClass(name, shortDescription, description, rating, numberOfReviews) {
         return Object(tslib__WEBPACK_IMPORTED_MODULE_0__["__awaiter"])(this, void 0, void 0, function* () {
-            const decodedName = decodeURI(name);
-            const actionState = yield this.design.findOne({ email: email, name: decodedName });
-            yield this.design.update({ email: email, name: decodedName }, { active: !actionState.active });
-            return this.design.find({ email: email });
-        });
-    }
-    getDesigns(email) {
-        return this.design.find({ email: email });
-    }
-    getActiveDesigns(email, token) {
-        return Object(tslib__WEBPACK_IMPORTED_MODULE_0__["__awaiter"])(this, void 0, void 0, function* () {
-            return this.design.find({ email: email, active: true });
-        });
-    }
-    addDesign(email, name, active, timestamp, jsModifications, genericModifications, resizeModifications) {
-        return Object(tslib__WEBPACK_IMPORTED_MODULE_0__["__awaiter"])(this, void 0, void 0, function* () {
-            const newDesign = new this.design({
-                email,
+            const newClass = new this.fclass({
                 name,
-                timestamp,
-                active,
-                javascriptInjections: jsModifications,
-                genericModifications,
-                resizeModifications
+                shortDescription,
+                description,
+                rating,
+                numberOfReviews
             });
-            const result = yield newDesign.save();
-            return result.id;
+            return yield newClass.save();
         });
     }
-    deleteDesign(email, name) {
+    updateClass(name, rating) {
         return Object(tslib__WEBPACK_IMPORTED_MODULE_0__["__awaiter"])(this, void 0, void 0, function* () {
-            yield this.design.deleteOne({ email, name });
-            return this.design.find({ email });
+            yield this.fclass.update({ name: name }, { rating: rating });
+            return this.fclass.find();
         });
     }
 };
-DesignCrudService = Object(tslib__WEBPACK_IMPORTED_MODULE_0__["__decorate"])([
+FclassCrudService = Object(tslib__WEBPACK_IMPORTED_MODULE_0__["__decorate"])([
     Object(_nestjs_common__WEBPACK_IMPORTED_MODULE_1__["Injectable"])(),
-    Object(tslib__WEBPACK_IMPORTED_MODULE_0__["__param"])(0, Object(_nestjs_mongoose__WEBPACK_IMPORTED_MODULE_2__["InjectModel"])('design')),
+    Object(tslib__WEBPACK_IMPORTED_MODULE_0__["__param"])(0, Object(_nestjs_mongoose__WEBPACK_IMPORTED_MODULE_2__["InjectModel"])('fclass')),
     Object(tslib__WEBPACK_IMPORTED_MODULE_0__["__metadata"])("design:paramtypes", [typeof (_a = typeof mongoose__WEBPACK_IMPORTED_MODULE_3__["Model"] !== "undefined" && mongoose__WEBPACK_IMPORTED_MODULE_3__["Model"]) === "function" ? _a : Object])
-], DesignCrudService);
+], FclassCrudService);
 
 
 
@@ -602,7 +461,7 @@ DesignCrudService = Object(tslib__WEBPACK_IMPORTED_MODULE_0__["__decorate"])([
 /*!***************************************!*\
   !*** ./libs/server-auth/src/index.ts ***!
   \***************************************/
-/*! exports provided: ServerAuthModule, ServerAuthService, ServerAuthController */
+/*! exports provided: ServerAuthModule, ServerAuthController, ServerAuthService */
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
@@ -831,7 +690,7 @@ let ServerAuthService = class ServerAuthService {
         this.jwtService = jwtService;
     }
     getData() {
-        return { message: 'Welcome to web-editor-server!' };
+        return { message: 'Welcome to app-server!' };
     }
     getUserById(email) {
         return Object(tslib__WEBPACK_IMPORTED_MODULE_0__["__awaiter"])(this, void 0, void 0, function* () {
@@ -895,7 +754,7 @@ ServerAuthService = Object(tslib__WEBPACK_IMPORTED_MODULE_0__["__decorate"])([
 /*! no static exports found */
 /***/ (function(module, exports, __webpack_require__) {
 
-module.exports = __webpack_require__(/*! /Users/laszlo/License/web-editor/apps/web-editor-server/src/main.ts */"./apps/web-editor-server/src/main.ts");
+module.exports = __webpack_require__(/*! /Users/laszlo/work/WEB_EDITOR/apps/web-editor-server/src/main.ts */"./apps/web-editor-server/src/main.ts");
 
 
 /***/ }),
@@ -952,17 +811,6 @@ module.exports = require("@nestjs/mongoose");
 /***/ (function(module, exports) {
 
 module.exports = require("bcrypt");
-
-/***/ }),
-
-/***/ "fs":
-/*!*********************!*\
-  !*** external "fs" ***!
-  \*********************/
-/*! no static exports found */
-/***/ (function(module, exports) {
-
-module.exports = require("fs");
 
 /***/ }),
 

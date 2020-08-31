@@ -11,14 +11,14 @@
     "nx.json": "*"
   },
   "projects": {
-    "web-editor-client": {
+    "app-client": {
       "tags": []
     },
-    "web-editor-client-e2e": {
+    "app-client-e2e": {
       "tags": [],
-      "implicitDependencies": ["web-editor-client"]
+      "implicitDependencies": ["app-client"]
     },
-    "web-editor-server": {
+    "app-server": {
       "tags": []
     },
     "visual-editor": {
@@ -43,6 +43,12 @@
       "tags": []
     },
     "about-page": {
+      "tags": []
+    },
+    "main-page": {
+      "tags": []
+    },
+    "fclass-crud": {
       "tags": []
     }
   }
